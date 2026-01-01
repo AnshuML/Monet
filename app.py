@@ -13,7 +13,7 @@ load_dotenv()
 
 # --- CONFIGURATION ---
 st.set_page_config(
-    page_title="Movie Mind AI",
+    page_title="Critic Mind AI",
     page_icon="🎬",
     layout="centered",
     initial_sidebar_state="expanded",
