@@ -220,7 +220,7 @@ def generate_final_summary(history, model_provider):
 # --- UI FLOW ---
 
 if st.session_state.step == "intro":
-    st.markdown('<div class="gradient-text">Movie Mind AI</div>', unsafe_allow_html=True)
+    st.markdown('<div class="gradient-text">Critic Mind AI</div>', unsafe_allow_html=True)
     st.markdown(f"""
     <div class="glass-card" style="text-align: center;">
         <p style="font-size: 1.1rem; opacity: 0.8; margin-bottom: 2rem;">
