@@ -317,9 +317,7 @@ elif st.session_state.step == "done":
     
 
 
-# ... (Previous imports)
 
-# ... (Inside the 'done' step, after summary_data is generated)
     
     with st.container():
         # Display Overall Summary
