@@ -236,7 +236,7 @@ if st.session_state.step == "intro":
     </div>
     """, unsafe_allow_html=True)
     
-    if st.button("🚀 Proceed to Questions"):
+    if st.button(" Proceed to Questions"):
         st.session_state.step = "questions"
         st.rerun()
 
@@ -268,7 +268,7 @@ elif st.session_state.step == "questions":
                     result = validate_response(QUESTIONS[idx], user_input, st.session_state.retry_count, model_choice)
                     
                     if result["isValid"]:
-                        st.success(f"✅ Input Accepted! Sentiment: {result['sentiment']}")
+                        st.success(f" Input Accepted! Sentiment: {result['sentiment']}")
                         st.session_state.history.append({
                             "q": QUESTIONS[idx], 
                             "a": user_input, 
@@ -305,7 +305,7 @@ elif st.session_state.step == "questions":
                                 st.rerun()
                         else:
                             st.session_state.retry_count = new_retry
-                            st.error(f"🤖 AI Guidance: {result['followUp']}")
+                            st.error(f" AI Guidance: {result['followUp']}")
 
 elif st.session_state.step == "done":
     st.markdown('<div class="gradient-text">Mission Complete</div>', unsafe_allow_html=True)
@@ -328,7 +328,7 @@ elif st.session_state.step == "done":
             <p style="font-size: 1.1rem; line-height: 1.6;">{sd.get('overall_vibe', 'You have a deep appreciation for the Avengers saga!')}</p>
             <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 1.5rem 0;">
             <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 0.5rem;">NEXT WATCH RECOMMENDATION:</p>
-            <div style="font-size: 1.3rem; font-weight: 700; color: #6366f1;">🍿 {sd.get('recommendation', 'Spider-Man: No Way Home')}</div>
+            <div style="font-size: 1.3rem; font-weight: 700; color: #6366f1;"> {sd.get('recommendation', 'Spider-Man: No Way Home')}</div>
         </div>
         """, unsafe_allow_html=True)
         
