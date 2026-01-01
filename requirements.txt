@@ -1,0 +1,7 @@
+streamlit
+google-generativeai
+streamlink
+google-generativeai
+python-dotenv
+groq
+matplotlib
